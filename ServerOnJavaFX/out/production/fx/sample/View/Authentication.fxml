@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #2E3348;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controllers.AuthenticationController">
+   <AnchorPane layoutY="100.0" prefHeight="300.0" prefWidth="700.0" style="-fx-background-color: #fafafa;">
+      <Button fx:id="loginButton" layoutX="300.0" layoutY="200.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" prefHeight="25.0" prefWidth="100.0" style="-fx-background-color: #DAA520; -fx-background-radius: 5;" text="Login" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS">
+         <font>
+            <Font name="System Italic" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <PasswordField fx:id="passwordField" layoutX="200.0" layoutY="150.0" prefHeight="40.0" prefWidth="300.0" promptText="Password" style="-fx-background-radius: 5;">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </PasswordField>
+      <TextField fx:id="loginField" layoutX="200.0" layoutY="100.0" prefHeight="40.0" prefWidth="300.0" promptText="Login" style="-fx-background-radius: 5;">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Label layoutX="269.0" layoutY="50.0" text="Authentication">
+         <font>
+            <Font name="Book Antiqua Bold Italic" size="24.0" />
+         </font>
+      </Label>
+   </AnchorPane>
+   <Label layoutX="14.0" layoutY="21.0" text="MyChat" textFill="#fafafa">
+      <font>
+         <Font name="Book Antiqua Bold Italic" size="48.0" />
+      </font>
+   </Label>
+   <Label layoutX="567.0" layoutY="82.0" text="Server Edition. Alpha" textFill="#fafafa" />
+</AnchorPane>

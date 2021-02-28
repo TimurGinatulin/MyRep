@@ -1,0 +1,11 @@
+//            loginButton.getScene().getWindow().hide();
+//
+//                    Parent root = null;
+//                    try {
+//                    root = FXMLLoader.load(getClass().getResource("/sample/View/MainSceneServer.fxml"));
+//                    } catch (IOException exception) {
+//                    exception.printStackTrace();
+//                    }
+//                    Stage stage = new Stage();
+//                    stage.setScene(new Scene(root));
+//                    stage.showAndWait();

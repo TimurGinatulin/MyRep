@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: #2E3348;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controllers.MainSceneServerController">
+   <children>
+      <Label layoutX="722.0" layoutY="14.0" text="Status: " textFill="#fafafa" />
+      <AnchorPane layoutY="100.0" prefHeight="400.0" prefWidth="800.0" style="-fx-background-color: #fafafa;">
+         <children>
+            <TextArea fx:id="CmdArea" editable="false" layoutX="200.0" prefHeight="368.0" prefWidth="600.0" wrapText="true" />
+            <TextArea fx:id="UsersArea" editable="false" layoutY="32.0" prefHeight="368.0" prefWidth="200.0" promptText="none">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </TextArea>
+            <TextField fx:id="CmdField" layoutX="200.0" layoutY="368.0" prefHeight="32.0" prefWidth="532.0" />
+            <Button fx:id="CmdButtonSend" layoutX="732.0" layoutY="368.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="68.0" style="-fx-background-radius: 5;" text="Send">
+               <font>
+                  <Font name="Bodoni MT Black" size="14.0" />
+               </font>
+            </Button>
+            <Label layoutX="41.0" layoutY="-1.0" text="Active users">
+               <font>
+                  <Font name="Book Antiqua Bold Italic" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label layoutX="14.0" layoutY="21.0" text="My Chat Server" textFill="#fafafa">
+         <font>
+            <Font name="Book Antiqua Bold Italic" size="48.0" />
+         </font>
+      </Label>
+      <Label layoutX="667.0" layoutY="82.0" text="Server Edition. Alpha" textFill="#fafafa" />
+      <Circle fx:id="StatusIndicator" fill="#34ff1f" layoutX="769.0" layoutY="22.0" radius="8.0" stroke="BLACK" strokeType="INSIDE" />
+   </children>
+</AnchorPane>
